@@ -1,0 +1,13 @@
+[data-ism-layer-active] {
+  box-sizing: border-box;
+  display: none;
+  color: #fff;
+}
+
+[data-ism-layer-active] {
+  outline: 5px dashed #0E74E6;
+  outline-offset: -5px;
+  background-color: #9DE0FC;
+  opacity: 0.8;
+  z-index: 100;
+}
