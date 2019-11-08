@@ -397,6 +397,8 @@
                             bgtype: layerObj.attr("data-bgtype") || "",
                             isRemovable: "true" === layerObj.attr("data-ism-removable"),
                             isSelectable: !layerObj.attr("data-ism-selectable") || "true" === layerObj.attr("data-ism-selectable"),
+                            isPinned: layerObj.attr("data-ism-pinned") && "true" === layerObj.attr("data-ism-pinned"),
+                            isHidden: layerObj.attr("data-ism-hidden") && "true" === layerObj.attr("data-ism-hidden"),
                             disabledProps: layerObj.attr("data-ism-disabled-props") || "",
                             order: parseInt(layerObj.attr("data-ism-order")) || 100 + idx,
                             hasScroll: layerObj.attr("data-ism-scroll-to"),

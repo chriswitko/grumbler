@@ -412,6 +412,8 @@ Bridge.prototype.getAllLayers = function () {
         bgtype: layerObj.attr('data-bgtype') || '',
         isRemovable: layerObj.attr('data-ism-removable') === 'true',
         isSelectable: !layerObj.attr('data-ism-selectable') || layerObj.attr('data-ism-selectable') === 'true',
+        isPinned: layerObj.attr('data-ism-pinned') && layerObj.attr('data-ism-pinned') === 'true',
+        isHidden: layerObj.attr('data-ism-hidden') && layerObj.attr('data-ism-hidden') === 'true',
         disabledProps: layerObj.attr('data-ism-disabled-props') || '',
         order: parseInt(layerObj.attr('data-ism-order')) || 100 + idx,
         hasScroll: layerObj.attr('data-ism-scroll-to'),
